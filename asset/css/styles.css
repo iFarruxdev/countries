@@ -1,0 +1,116 @@
+/* VARIABLES */
+
+:root {
+  --font-primary: sans-serif;
+  --color-primary: blue;
+  --secondry: red;
+  --link-color: #fff;
+}
+
+/* RESPONSIVE - HIDES */
+
+.hide-desktop {
+  display: block;
+}
+.hide-mobile {
+  display: none;
+}
+a {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* UTILITY-CLASS */
+
+.d-flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-items {
+  display: flex;
+  align-items: center;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+/* GLOBAL STYLES */
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* BODY */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-family: Arial, var(--font-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 100%;
+  max-width: 1536px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+  flex-grow: 1;
+}
