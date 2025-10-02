@@ -1,10 +1,18 @@
 /* VARIABLES */
 
 :root {
-  --font-primary: sans-serif;
-  --color-primary: blue;
-  --secondry: red;
-  --link-color: #fff;
+  --font-primary: "Nunito Sans", Arial, sans-serif;
+  --main-color: #111517;
+  --main-color-80: rgba(17, 21, 23, .8);
+  --main-color-60: rgba(17, 21, 23, .6);
+  --body-bg: #FAFAFA;
+  --text-color: #848484;
+  --element-bg: #fff;
+}
+
+*:focus {
+  outline: 2px dashed var(--main-color);
+  outline-offset: 3px;
 }
 
 /* RESPONSIVE - HIDES */
@@ -83,14 +91,21 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 1.2;
-  font-family: Arial, var(--font-primary);
+  font-family: var(--font-primary);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  color: #222;
+  background-color: var(--body-bg);
+}
+
+.dark-mode {
+  --main-color: #fff;
+  --main-color-80: rgba(255, 255, 255, .8);
+  --main-color-60: rgba(255, 255, 255, .6);
+  --element-bg: #2B3844;
+  --body-bg: #202C36;
 }
 
 img {
@@ -113,4 +128,65 @@ img {
 
 .main-content {
   flex-grow: 1;
+}
+
+
+/* SITE START  */
+
+/* HEADER */
+
+.index-header {
+  background-color: var(--element-bg);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 43px;
+  box-shadow: 0px 2px 4px 0px #0000000E;
+}
+.header-container {
+  padding: 0 80px;
+}
+.site-header-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: normal;
+  transition: color .2s ease;
+  color: var(--main-color);
+}
+.site-header-logo:hover {
+  color: var(--main-color-80);
+}
+.site-header-logo:active {
+  color: var(--main-color-60);
+}
+.site-header-toggler {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.site-header-toggler:hover {
+  opacity: 0.8;
+}
+.site-header-toggler:active {
+  opacity: 0.6;
+}
+.site-header-toggler-inner {
+  display: flex;
+  align-items: center;
+}
+.site-header-toggler-inner-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+.site-header-toggler-inner-text {
+  font-size: 1rem;
+  line-height: normal;
+  font-weight: 600;
+  color: var(--main-color);
+}
+/* MAIN */
+
+.main-container {
+  padding: 45px 80px;
 }

@@ -3,16 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starter Template by Farrux Djalilov</title>
+  <title>Countries</title>
   <!-- META-TEG -->
   <meta name="author" content="Farrux Djalilov">
-  <meta name="description" content="Information">
-  <meta name="keywords" content="Ketegoriyasi">
+  <meta name="description" content="Information about this project country">
+  <meta name="keywords" content="country">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./asset/css/normalize.css">
   <link rel="stylesheet" href="./asset/css/styles.css">
 </head>
 <body>
 
+  <!-- HEADER -->
+   <header class="index-header">
+    <div class="header-container flex-between container">
+      <a class="site-header-logo" href="index.html">Where in the world?</a>
+      <button class="site-header-toggler">
+        <span class="site-header-toggler-inner">
+          <img class="site-header-toggler-inner-img" width="20" height="20"
+          src="./asset/image/icon-moon.svg" alt="">
+          <span class="site-header-toggler-inner-text">Dark Mode</span>
+        </span>
+      </button>
+    </div>
+   </header>
+
+   <!-- MAIN -->
+    <main class="main-content">
+      <div class="main-container container">
+        <section class="input-filter-wrapper">
+          <form action="https://echo.htmlacademy.ru">
+            <input class="search-input" name="search" type="text">
+          </form>
+        </section>
+      </div>
+    </main>
+  <!-- JS FILE -->
+   <script src="./asset/js/main.js"></script>
 </body>
 </html>
