@@ -134,6 +134,9 @@ img {
   padding-top: 48px;
   padding-bottom: 48px;
 }
+.main-content-inner {
+  padding-top: 80px;
+}
 
 
 /* SITE START  */
@@ -287,4 +290,117 @@ img {
 }
 .index-country-details-value {
   margin-left: 4px;
+}
+
+/* COUNTRY PAGE */
+
+.contry-page-back-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--main-color);
+  background-color: var(--element-bg);
+  padding: 10px 40px;
+  border-radius: 6px;
+  box-shadow: 0 0 7 0 #0000004B;
+  margin-bottom: 80px;
+}
+.contry-page-back-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+.contry-page-back-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contry-page-info-flag {
+  display: flex;
+}
+.contry-page-flag-image {
+  width: 560px;
+  height: 400px;
+  object-fit: cover;
+  border: 0;
+  border-radius: 12px;
+  margin-right: 120px;
+  overflow: hidden;
+}
+
+.country-page-info {
+  width: 600px;
+  padding-top: 20px;
+}
+.country-page-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: normal;
+  font-weight: 800;
+  color: var(--main-color);
+}
+.country-page-dls-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  color: var(--main-color);
+}
+.contry-page-details {
+  margin: 0;
+  padding: 0;
+}
+.country-page-details-item {
+  display: flex;
+  align-items: center;
+}
+.country-page-details-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.country-page-details-title {
+  font-weight: 600;
+  margin-right: 4px;
+  font-size: 16px;
+  line-height: 32px;
+}
+.contry-page-details-value {
+  margin: 0;
+  font-weight: 300;
+}
+
+.country-page-border-countries {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: var(--main-color);
+}
+.country-page-border-countries-heading {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+.country-page-border-countries-list {
+  display: flex;
+  align-items: center;
+}
+.country-page-border-countries-link {
+  padding: 5px 28px;
+  background-color: var(--element-bg);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: normal;
+  border-radius: 2px;
+  border: 1px solid #979797;
+}
+.country-page-border-countries-link:hover {
+  opacity: .8;
+}
+.country-page-border-countries-link:active {
+  opacity: .6;
+}
+.country-page-border-countries-link:not(:last-child) {
+  margin-right: 10px;
 }
